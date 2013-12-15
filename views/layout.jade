@@ -1,0 +1,22 @@
+doctype 5
+html(lang="ja")
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="/plugin/syntaxhighlighter_3.0.83/styles/shCore.css")
+    link(rel="stylesheet", href="/plugin/syntaxhighlighter_3.0.83/styles/shThemeDefault.css")
+    script(src="/plugin/syntaxhighlighter_3.0.83/scripts/shCore.js")
+    script(src="/plugin/syntaxhighlighter_3.0.83/scripts/shBrushBash.js")
+    script(src="/plugin/syntaxhighlighter_3.0.83/scripts/shBrushXml.js")
+    script(src="/plugin/syntaxhighlighter_3.0.83/scripts/shBrushCss.js")
+    script(src="/plugin/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js")
+    script(src="/plugin/syntaxhighlighter_3.0.83/scripts/shBrushPhp.js")
+    script(src="/plugin/syntaxhighlighter_3.0.83/scripts/shBrushScala.js")
+    | <script type="text/javascript">SyntaxHighlighter.all();</script>
+  body.stripes.angled-135
+    #header
+      h1.title #{title}
+      p.subtitle #{subtitle}
+    block content
+    #footer
+      p.footer-text delaemon.com

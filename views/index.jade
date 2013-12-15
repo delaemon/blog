@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  #content
+    .entry
+      .date
+        span.month #{entry.year}/#{entry.month}/
+        span.day #{entry.day}
+      .entry-body
+        h2.title #{entry.title}
+        p.body !{entry.body}
+          a.leave-comment-title(href="/page/#{page}", title="Next") Next
